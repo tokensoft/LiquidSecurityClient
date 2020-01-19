@@ -1,0 +1,23 @@
+{
+  "name": "liquidsecurityclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "yarn run ts-node-dev ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "openapi --src ./specification.yaml --outDir ./src/generated --language ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.35",
+    "openapi-client": "^1.0.5",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.8",
+    "node-fetch": "^2.6.0"
+  }
+}
